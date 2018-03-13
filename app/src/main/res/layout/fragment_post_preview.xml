@@ -1,0 +1,273 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.michal.vycvik.Fragments.PostPreviewFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:id="@+id/post_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/colorGrayLight">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/post_top_image"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:gravity="bottom"
+                android:layout_height="200dp"
+                android:background="@drawable/post_top_image">
+
+                <TextView
+                    android:id="@+id/post_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="20dp"
+                    android:paddingLeft="20dp"
+                    android:layout_gravity="bottom"
+                    android:textStyle="bold|italic"
+                    android:text="Tytuł jakiś wydarzenia owego tego jakiegoś tam takiegoś tu"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:id="@+id/post_instructor_img"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/clarcson"/>
+
+                    <TextView
+                        android:id="@+id/post_instructor_name"
+                        android:padding="10dp"
+                        android:paddingTop="5sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeremy Clarcson"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorTextDark"
+                        android:textSize="16dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="5dp">
+
+                <TextView
+                    android:id="@+id/post_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/blue_rounded_background"
+                    android:text="@string/lorem_ipsum"
+                    android:textStyle="italic"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorTextLight"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/solid_gray_rounded_background">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Prelegant:"
+                            android:textStyle="italic"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorTextLight" />
+
+                        <ImageView
+                            android:id="@+id/post_det_instructor_img"
+                            android:paddingBottom="5dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-15dp"
+                            android:src="@drawable/clarcson"/>
+
+                        <TextView
+                            android:id="@+id/post_det_instructor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorTextLight"
+                            android:textStyle="italic"
+                            android:text="Jeremy Clarcson"/>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/star1"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_star_active_24dp"/>
+                            <ImageView
+                                android:id="@+id/star2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_star_active_24dp"/>
+                            <ImageView
+                                android:id="@+id/star3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_star_active_24dp"/>
+                            <ImageView
+                                android:id="@+id/star4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_star_active_24dp"/>
+                            <ImageView
+                                android:id="@+id/star5"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/ic_star_active_24dp"/>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/post_det_instructor_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="7dp"
+                            android:textColor="@color/colorTextLight"
+                            android:textSize="16sp"
+                            android:textStyle="italic"
+                            android:text="Opis nie długi jakiś i piękny owego preleganta mającego coś mądrego do powiedzenia. Najpewniej. Pasek pokazuje jak ktoś jest super i wgl.. "/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/accent"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/post_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="18sp"
+                        android:padding="1.5dp"
+                        android:text="600zł"/>
+                    <TextView
+                        android:id="@+id/post_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="18sp"
+                        android:padding="1.5dp"
+                        android:text="Lublin, Nałęczowska 5"/>
+
+                    <TextView
+                        android:id="@+id/avaible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:padding="1.5dp"
+                        android:text="4 miejsc dostępnych"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/post_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="18sp"
+                        android:padding="1.5dp"
+                        android:text="17 lipca 2017"/>
+                    <TextView
+                        android:id="@+id/post_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextLight"
+                        android:textSize="18sp"
+                        android:padding="1.5dp"
+                        android:text="14:30"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:layout_weight="2"
+                    android:background="@color/accent">
+
+                    <Button
+                        android:id="@+id/post_sign_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/accent"
+                        android:text="Zapisz się"
+                        android:textStyle="italic|bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextLight"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/colorOrange"
+                        android:text="Napisz wiadomość"
+                        android:textStyle="italic|bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorTextLight"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorGrayLight"
+    android:layout_weight="20"
+    tools:context="com.example.michal.vycvik.MainActivity">
+
+
+
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:orientation="horizontal"
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--android:layout_height="?attr/actionBarSize"-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:translationZ="2dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_weight="25"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:background="@color/colorGraySolid">-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorGraySolid"-->
+            <!--android:textColor="@color/colorTextLight"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:text="sortuj"-->
+            <!--android:layout_weight="3"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorGraySolid"-->
+
+            <!--android:textColor="@color/colorTextLight"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:text="przedział:"-->
+            <!--android:layout_weight="3"/>-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorGraySolid"-->
+
+            <!--android:textColor="@color/colorTextLight"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:text="od"-->
+            <!--android:layout_weight="3"/>-->
+
+
+        <!--<Button-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/colorGraySolid"-->
+
+            <!--android:textColor="@color/colorTextLight"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:text="do"-->
+            <!--android:layout_weight="3"/>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+
+</FrameLayout>
